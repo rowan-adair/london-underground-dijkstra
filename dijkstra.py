@@ -62,7 +62,7 @@ def shortest_path(graph, origin, destination):
 
     return visited[destination], list(full_path)
 
-if __name__ == '__main__':
+def main():
     graph = Graph()
 
     for node in ['A', 'B', 'C', 'D', 'E', 'F', 'G']:
@@ -77,4 +77,6 @@ if __name__ == '__main__':
     graph.add_edge('E', 'F', 5)
     graph.add_edge('F', 'G', 2)
 
-    print(shortest_path(graph, 'A', 'D')) # output: (25, ['A', 'B', 'D']) 
+    print(shortest_path(graph, 'A', 'D')) 
+
+main()
